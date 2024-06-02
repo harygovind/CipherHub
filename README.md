@@ -1,5 +1,5 @@
 # CipherHub
-This is a simple tool for generating passwords and checking the complexity of passwords.
+A tool for generating passwords and checking the complexity of passwords.
 
 Make sure all the files are saved in the same directory.
 
