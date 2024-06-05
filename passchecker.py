@@ -1,6 +1,6 @@
 import pyfiglet
 
-title=pyfiglet.figlet_format("Password complexity checker", justify='center')
+title = pyfiglet.figlet_format("Password complexity checker", justify='center')
 print(title, end="")
 
 def time_to_crack_password(password):
@@ -25,6 +25,10 @@ def time_to_crack_password(password):
 
     # Get length of the password
     length = len(password)
+
+    # Check if password length exceeds the lookup table
+    if length > 18:
+        return "Your password is like a fortress made of unicorns and rainbows. Impenetrable!"
 
     # Check if password length is in the lookup table
     if length in time_lookup:
